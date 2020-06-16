@@ -1,0 +1,170 @@
+/* --------------------
+Base Element styles
+-------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif, arial;
+  color: #636e72;
+}
+
+.smaller-body {
+  width: 60%;
+  margin: auto;
+}
+
+label {
+  margin: 0.5em 0;
+}
+
+p {
+  margin: 0.5em 0 0.5em 0;
+}
+
+legend,
+h3 {
+  margin-top: 1.5em;
+  color: black;
+  font-weight: 900;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.title {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.main-info {
+  margin: auto;
+  text-align: center;
+  border-bottom: 3px solid black;
+}
+
+hr {
+  color: black;
+}
+
+h3 {
+  line-height: 0.2em;
+  margin-top: 3em;
+}
+
+.news {
+  margin-bottom: 3em;
+}
+
+.flex-pair {
+  display: flex;
+
+  flex-direction: column;
+}
+
+select {
+  background-color: red;
+}
+
+.form {
+  padding: 0;
+  margin: 0;
+  flex: 1 100%;
+}
+
+.copyright {
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+select,
+textarea,
+button {
+  background-color: #dcdde1;
+  border-radius: 5px;
+  padding: 5px 0;
+  border: none;
+}
+
+textarea {
+  background: #f8efba;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  background-color: #cad3c8;
+}
+
+.button {
+  width: 100%;
+  background-color: #00ccae;
+  padding: 5px;
+}
+
+::placeholder {
+  text-align: right;
+}
+
+input[type='text']#postcode::placeholder {
+  text-align: left;
+}
+
+/* -------------------
+Form styles
+------------------- */
+
+/* -------------------
+Media Queries
+------------------- */
+
+@media (min-width: 768px) {
+  .flex-pair {
+    flex-direction: row;
+  }
+
+  .form {
+    flex: 1;
+  }
+
+  .form1 {
+    flex: 2;
+  }
+
+  /* .form 
+{
+    flex: 1 50%;
+} */
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  select,
+  textarea {
+    margin: 4px 0;
+  }
+
+  .button {
+    padding: 10px;
+  }
+}
